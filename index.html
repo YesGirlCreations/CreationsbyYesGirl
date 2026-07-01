@@ -30,8 +30,8 @@
     }
 
     header {
-      min-height: 100vh;
-      padding: 38px 20px 72px;
+      min-height: 92vh;
+      padding: 64px 20px 54px;
       background:
         radial-gradient(circle at top left, rgba(255,255,255,.95), transparent 34%),
         radial-gradient(circle at top right, rgba(255,214,236,.9), transparent 33%),
@@ -48,7 +48,7 @@
       background: rgba(255,255,255,.66);
       border: 1px solid rgba(255,255,255,.9);
       border-radius: 42px;
-      padding: 46px 26px;
+      padding: 34px 26px 42px;
       box-shadow: 0 24px 70px rgba(74, 26, 110, .18);
       backdrop-filter: blur(8px);
       position: relative;
@@ -56,10 +56,10 @@
     }
 
     .logo {
-      max-width: 380px;
+      max-width: 320px;
       width: 86%;
       height: auto;
-      margin: 0 auto 10px;
+      margin: 16px auto 12px;
       display: block;
     }
 
@@ -119,6 +119,8 @@
       border-radius: 999px;
       font-size: 20px;
       font-weight: bold;
+      min-width: 260px;
+      text-align: center;
       box-shadow: 0 0 22px rgba(214, 156, 255, .85);
       transition: transform .2s ease, box-shadow .2s ease;
     }
@@ -172,6 +174,7 @@
       border-radius: 24px;
       padding: 26px 20px;
       box-shadow: 0 0 17px rgba(100, 50, 130, 0.1);
+      min-height: 220px;
     }
 
     a.soft-card {
@@ -199,6 +202,13 @@
       grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 22px;
       margin-top: 32px;
+    }
+
+    .icons {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 990px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .icon { font-size: 44px; margin-bottom: 8px; }
@@ -255,6 +265,10 @@
 
     footer p { font-size: 17px; }
 
+    @media (max-width: 900px) {
+      .icons { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 650px) {
       header { padding-top: 28px; }
       .hero { padding: 30px 16px; border-radius: 28px; }
@@ -264,6 +278,8 @@
       nav a { margin: 6px 7px; font-size: 15px; }
       section { padding: 58px 16px; }
       .card { padding: 32px 18px; }
+      .icons { grid-template-columns: 1fr; }
+      .soft-card { min-height: auto; }
     }
   </style>
 </head>
@@ -285,7 +301,7 @@
     <h2>And you know what? You can be too!</h2>
 
     <p>
-      All you have to do is trust and believe in His Truth.
+      All you have to do is trust and believe in His Truth.<br>
       He will set you free, just like He's done for me.
     </p>
 
@@ -351,13 +367,14 @@
         <p>Stories and words that inspire faith.</p>
         <span class="card-link-note">Future Books →</span>
       </a>
-          <a class="soft-card" href="#poetry">
+
+      <a class="soft-card" href="#poetry">
         <div class="icon">🖋️</div>
         <h3>Poetry</h3>
         <p>Poems inspired by faith, healing, hope, and worship.</p>
         <span class="card-link-note">Poetry Coming Soon →</span>
       </a>
-</div>
+    </div>
   </div>
 </section>
 
