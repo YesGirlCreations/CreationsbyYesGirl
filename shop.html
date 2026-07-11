@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Shop | Creations By Yes Girl</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #32164f;
+      text-align: center;
+      background: linear-gradient(135deg, #fff3f8, #ead8ff, #fff7fb);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.8), transparent 18%),
+        radial-gradient(circle at 85% 15%, rgba(255,214,236,.65), transparent 20%),
+        radial-gradient(circle at 50% 85%, rgba(230,214,255,.65), transparent 24%);
+      z-index: -1;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(9px);
+      border-bottom: 1px solid rgba(123, 63, 161, .12);
+      padding: 12px;
+    }
+
+    nav a {
+      color: #6b2d91;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 8px 12px;
+      display: inline-block;
+    }
+
+    nav a:hover { color: #c04491; }
+
+    header {
+      position: relative;
+      padding: 70px 20px 45px;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,.95), transparent 34%),
+        radial-gradient(circle at top right, rgba(255,214,236,.9), transparent 33%),
+        linear-gradient(135deg, #fff7fb, #ffd6ec, #e6d6ff);
+    }
+
+    .hero {
+      width: min(1040px, 100%);
+      margin: auto;
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(255,255,255,.92);
+      border-radius: 42px;
+      padding: 46px 26px;
+      box-shadow: 0 24px 70px rgba(74, 26, 110, .18);
+      backdrop-filter: blur(8px);
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      max-width: 380px;
+      width: 86%;
+      height: auto;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 10px auto 0;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.82);
+      color: #8b2f83;
+      font-weight: bold;
+      letter-spacing: .5px;
+      box-shadow: 0 0 18px rgba(214,156,255,.35);
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 68px);
+      margin: 18px 0 8px;
+      color: #3b176b;
+      line-height: 1.04;
+    }
+
+    h2 {
+      font-size: clamp(24px, 4vw, 36px);
+      color: #c04491;
+      font-style: italic;
+      margin: 10px 0 18px;
+    }
+
+    h3 {
+      font-size: 28px;
+      color: #7b3fa1;
+      margin: 8px 0 10px;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 840px;
+      margin: 15px auto;
+      line-height: 1.68;
+    }
+
+    .butterfly {
+      position: absolute;
+      font-size: 42px;
+      animation: flutter 8s infinite ease-in-out;
+      opacity: 0.8;
+      z-index: 1;
+    }
+
+    .b1 { top: 14%; left: 7%; }
+    .b2 { top: 18%; right: 9%; animation-delay: 1s; }
+    .b3 { bottom: 12%; left: 11%; animation-delay: 2s; }
+    .b4 { bottom: 16%; right: 13%; animation-delay: 3s; }
+
+    @keyframes flutter {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-25px) rotate(10deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    main { padding: 72px 20px; }
+
+    .card {
+      background: rgba(255, 255, 255, 0.88);
+      max-width: 1050px;
+      margin: 0 auto 30px;
+      padding: 44px 28px;
+      border-radius: 30px;
+      box-shadow: 0 0 30px rgba(100, 50, 130, 0.14);
+      border: 1px solid rgba(255,255,255,.92);
+    }
+
+    .product-card {
+      max-width: 720px;
+      margin: 34px auto 0;
+      overflow: hidden;
+      background: #fff7fb;
+      border: 1px solid rgba(214,156,255,.32);
+      border-radius: 28px;
+      box-shadow: 0 14px 34px rgba(100, 50, 130, .16);
+    }
+
+    .product-card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 30px 24px 34px;
+    }
+
+    .price {
+      font-size: 30px;
+      color: #c04491;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto 26px;
+      max-width: 520px;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 17px 34px;
+      background: linear-gradient(135deg, #7b3fa1, #b65ad6);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 19px;
+      font-weight: bold;
+      box-shadow: 0 0 22px rgba(214, 156, 255, .75);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(123, 63, 161, .32);
+    }
+
+    .button.light {
+      background: white;
+      color: #7b3fa1;
+      border: 2px solid #d69cff;
+    }
+
+    .coming-soon {
+      margin-top: 38px;
+      padding: 28px 20px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #fff7fb, #f0e4ff);
+      border: 1px dashed #c997df;
+    }
+
+    footer {
+      padding: 38px 20px;
+      background: #3b244d;
+      color: white;
+    }
+
+    footer p { font-size: 17px; }
+
+    @media (max-width: 650px) {
+      nav a { margin: 6px 7px; font-size: 15px; }
+      header { padding: 44px 16px 32px; }
+      .hero { padding: 30px 16px; border-radius: 28px; }
+      main { padding: 52px 16px; }
+      .card { padding: 32px 18px; }
+      p { font-size: 18px; }
+      .button { width: 100%; max-width: 340px; font-size: 18px; padding: 15px 22px; }
+      .butterfly { opacity: .35; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="/CreationsbyYesGirl/index.html#welcome">Home</a>
+  <a href="/CreationsbyYesGirl/mystory.html">My Story</a>
+  <a href="/CreationsbyYesGirl/psalmswithmyfather.html">Psalms</a>
+  <a href="/CreationsbyYesGirl/index.html#music">Music</a>
+  <a href="/CreationsbyYesGirl/shop.html">Shop</a>
+  <a href="/CreationsbyYesGirl/encouragement.html">Journal</a>
+  <a href="/CreationsbyYesGirl/index.html#prayer">Prayer</a>
+</nav>
+
+<header>
+  <div class="butterfly b1">🦋</div>
+  <div class="butterfly b2">🦋</div>
+  <div class="butterfly b3">🦋</div>
+  <div class="butterfly b4">🦋</div>
+
+  <div class="hero">
+    <img class="logo" src="CreationsbyYesGirl-logo.png" alt="Creations By Yes Girl logo">
+
+    <div class="eyebrow">You are loved. 💜 You are chosen. 🦋 You are worthy.</div>
+
+    <h1>Digital Shop</h1>
+    <h2>Share the love. Share the hope.</h2>
+
+    <p>
+      Welcome to the Creations By Yes Girl digital shop.
+      Every item is created to encourage hearts and help share the love of Jesus.
+    </p>
+
+    <p><strong>One card at a time. 💜</strong></p>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h1>🦋 Printable Prayer Cards</h1>
+
+    <p>
+      Beautiful watercolor cards filled with Scripture, hope, and encouragement.
+      Print them at home and share them with someone who needs a reminder of God's love.
+    </p>
+
+    <article class="product-card">
+      <img src="prayer-cards-volume-1.png" alt="Jesus Loves You Prayer Cards Volume 1">
+
+      <div class="product-info">
+        <h3>Jesus Loves You Prayer Cards | Volume 1</h3>
+
+        <p>
+          A faith-filled printable collection created in Amber's soft watercolor style
+          with butterflies, Scripture, hope, and encouragement.
+        </p>
+
+        <div class="price">$4.99</div>
+
+        <ul class="features">
+          <li>✓ Printable digital download</li>
+          <li>✓ Watercolor prayer and encouragement cards</li>
+          <li>✓ Scripture-centered messages</li>
+          <li>✓ Perfect for friends, churches, care packages, and outreach</li>
+        </ul>
+
+        <div class="button-row">
+          <a class="button light" href="prayer-cards-volume-1.png" target="_blank">Preview the Cards</a>
+
+          <!-- Replace # with your Gumroad link after publishing -->
+          <a class="button" href="#">Coming Soon</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="coming-soon">
+      <h3>More Items Coming Soon! 🦋</h3>
+      <p>Please check back soon for more faith-filled digital creations.</p>
+    </div>
+
+    <div class="button-row">
+      <a class="button light" href="/CreationsbyYesGirl/index.html#welcome">Back to Home</a>
+      <a class="button" href="https://creations-by-yes-girl-316.printify.me" target="_blank" rel="noopener noreferrer">
+        Shop Apparel &amp; Gifts
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Creations By Yes Girl • Amber</p>
+  <p>Share the love. Share the hope. One card at a time. 💜</p>
+</footer>
+
+</body>
+</html>
