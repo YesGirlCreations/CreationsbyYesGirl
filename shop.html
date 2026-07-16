@@ -142,7 +142,7 @@
 
     .card {
       background: rgba(255, 255, 255, 0.88);
-      max-width: 1050px;
+      max-width: 1180px;
       margin: 0 auto 30px;
       padding: 44px 28px;
       border-radius: 30px;
@@ -150,14 +150,28 @@
       border: 1px solid rgba(255,255,255,.92);
     }
 
+    .section-title {
+      font-size: clamp(34px, 5vw, 52px);
+      color: #3b176b;
+      margin: 0 0 10px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+      align-items: stretch;
+      margin: 38px auto 0;
+    }
+
     .product-card {
-      max-width: 720px;
-      margin: 34px auto 0;
       overflow: hidden;
       background: #fff7fb;
       border: 1px solid rgba(214,156,255,.32);
       border-radius: 28px;
       box-shadow: 0 14px 34px rgba(100, 50, 130, .16);
+      display: flex;
+      flex-direction: column;
     }
 
     .product-card img {
@@ -165,10 +179,18 @@
       display: block;
       aspect-ratio: 1 / 1;
       object-fit: cover;
+      background: #f7ecff;
     }
 
     .product-info {
       padding: 30px 24px 34px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .product-info p {
+      font-size: 18px;
     }
 
     .price {
@@ -185,6 +207,7 @@
       max-width: 520px;
       font-size: 18px;
       line-height: 1.9;
+      text-align: left;
     }
 
     .button-row {
@@ -192,7 +215,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 16px;
-      margin-top: 24px;
+      margin-top: auto;
     }
 
     .button {
@@ -227,6 +250,16 @@
       border: 1px dashed #c997df;
     }
 
+    .coming-soon-list {
+      font-size: 18px;
+      line-height: 1.9;
+      margin: 12px auto 0;
+    }
+
+    .shop-links {
+      margin-top: 32px;
+    }
+
     footer {
       padding: 38px 20px;
       background: #3b244d;
@@ -234,6 +267,13 @@
     }
 
     footer p { font-size: 17px; }
+
+    @media (max-width: 850px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+        max-width: 720px;
+      }
+    }
 
     @media (max-width: 650px) {
       nav a { margin: 6px 7px; font-size: 15px; }
@@ -244,6 +284,7 @@
       p { font-size: 18px; }
       .button { width: 100%; max-width: 340px; font-size: 18px; padding: 15px 22px; }
       .butterfly { opacity: .35; }
+      .features { font-size: 17px; }
     }
   </style>
 </head>
@@ -285,49 +326,91 @@
 
 <main>
   <section class="card">
-    <h1>🦋 Printable Prayer Cards</h1>
+    <h1 class="section-title">🦋 Printable Prayer Cards</h1>
 
     <p>
       Beautiful watercolor cards filled with Scripture, hope, and encouragement.
       Print them at home and share them with someone who needs a reminder of God's love.
     </p>
 
-    <article class="product-card">
-      <img src="prayer-cards-volume-1.png" alt="Jesus Loves You Prayer Cards Volume 1">
+    <div class="product-grid">
+      <article class="product-card">
+        <img src="prayer-cards-volume-1.png" alt="Jesus Loves You Prayer Cards Volume 1">
 
-      <div class="product-info">
-        <h3>Jesus Loves You Prayer Cards | Volume 1</h3>
+        <div class="product-info">
+          <h3>Jesus Loves You Prayer Cards | Volume 1</h3>
 
-        <p>
-          A faith-filled printable collection created in Amber's soft watercolor style
-          with butterflies, Scripture, hope, and encouragement.
-        </p>
+          <p>
+            A faith-filled printable collection created in Amber's soft watercolor style
+            with butterflies, Scripture, hope, and encouragement.
+          </p>
 
-        <div class="price">$5</div>
+          <div class="price">$5</div>
 
-        <ul class="features">
-          <li>✓ Printable digital download</li>
-          <li>✓ Watercolor prayer and encouragement cards</li>
-          <li>✓ Scripture-centered messages</li>
-          <li>✓ Perfect for friends, churches, care packages, and outreach</li>
-        </ul>
+          <ul class="features">
+            <li>✓ Printable digital download</li>
+            <li>✓ Watercolor prayer and encouragement cards</li>
+            <li>✓ Scripture-centered messages</li>
+            <li>✓ Perfect for friends, churches, care packages, and outreach</li>
+          </ul>
 
-        <div class="button-row">
-          <a class="button light" href="prayer-cards-volume-1.png" target="_blank">Preview the Cards</a>
-
-          <!-- Replace # with your Gumroad link after publishing -->
-          <a class="button" href="#">Coming Soon</a>
+          <div class="button-row">
+            <a class="button light" href="prayer-cards-volume-1.png" target="_blank" rel="noopener noreferrer">
+              Preview Volume 1
+            </a>
+            <a class="button" href="https://amberwave160.gumroad.com/l/biafu" target="_blank" rel="noopener noreferrer">
+              Get Volume 1
+            </a>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <div class="coming-soon">
-      <h3>More Items Coming Soon! 🦋</h3>
-      <p>Please check back soon for more faith-filled digital creations.</p>
+      <article class="product-card">
+        <img src="prayer-cards-volume-2.png" alt="Jesus Loves You Prayer Cards Volume 2">
+
+        <div class="product-info">
+          <h3>Jesus Loves You Prayer Cards | Volume 2</h3>
+
+          <p>
+            Continue sharing God's love with a second printable collection of
+            watercolor prayer cards filled with faith, comfort, and encouragement.
+          </p>
+
+          <div class="price">$5</div>
+
+          <ul class="features">
+            <li>✓ Printable digital download</li>
+            <li>✓ A new collection of watercolor prayer cards</li>
+            <li>✓ Faith-filled messages of hope and love</li>
+            <li>✓ Perfect for sharing, gifting, ministry, and outreach</li>
+          </ul>
+
+          <div class="button-row">
+            <a class="button light" href="prayer-cards-volume-2.png" target="_blank" rel="noopener noreferrer">
+              Preview Volume 2
+            </a>
+            <a class="button" href="https://amberwave160.gumroad.com/l/gcfrbu" target="_blank" rel="noopener noreferrer">
+              Get Volume 2
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
 
-    <div class="button-row">
+    <div class="coming-soon">
+      <h3>More Faith-Filled Creations Coming Soon! 🦋</h3>
+      <p class="coming-soon-list">
+        Healing journals • Children's books • Music collections • Scripture cards • Watercolor artwork
+      </p>
+    </div>
+
+    <div class="button-row shop-links">
       <a class="button light" href="/CreationsbyYesGirl/index.html#welcome">Back to Home</a>
+
+      <a class="button light" href="https://amberwave160.gumroad.com" target="_blank" rel="noopener noreferrer">
+        Visit My Gumroad Store
+      </a>
+
       <a class="button" href="https://creations-by-yes-girl-316.printify.me" target="_blank" rel="noopener noreferrer">
         Shop Apparel &amp; Gifts
       </a>
