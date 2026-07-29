@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+}
+
+.side-picture {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+/* On phones */
+@media (max-width: 600px) {
+  .logo-row {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .side-picture {
+    width: 80px;
+    height: 80px;
+  }
+}
+</style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creations By Yes Girl</title>
