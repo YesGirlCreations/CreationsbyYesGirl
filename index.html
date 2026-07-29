@@ -2,36 +2,40 @@
 <html lang="en">
 <head>
 <style>
-.logo-row {
+/* Home page logo section */
+.home-logo-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 35px;
+  gap: 30px;
   width: 100%;
-  margin: 25px auto;
+  margin: 30px auto;
 }
 
-.logo {
+.home-logo {
   width: 250px;
   height: auto;
+  display: block;
 }
 
-.side-picture {
+.home-side-picture {
   width: 140px;
   height: 140px;
   object-fit: contain;
+  display: block;
 }
 
+/* Mobile phones */
 @media (max-width: 600px) {
-  .logo-row {
+  .home-logo-row {
     gap: 10px;
   }
 
-  .logo {
+  .home-logo {
     width: 160px;
   }
 
-  .side-picture {
+  .home-side-picture {
     width: 75px;
     height: 75px;
   }
@@ -328,15 +332,13 @@
   <div class="butterfly b5">🦋</div>
 
   <div class="hero">
-   <div class="logo-row">
+<div class="home-logo-row">
 
-<div class="logo-row">
+  <img class="home-side-picture" src="fractured-logo.png" alt="Fractured">
 
-  <img class="side-picture" src="fractured-cover.PNG" alt="Fractured">
+  <img class="home-logo" src="CreationsbyYesGirl-logo.png" alt="Creations By Yes Girl logo">
 
-  <img class="logo" src="CreationsbyYesGirl-logo.png" alt="Creations By Yes Girl">
-
-  <img class="side-picture" src="Iamloved.png" alt="I Am Loved">
+  <img class="home-side-picture" src="Iamloved.png" alt="I am Loved">
 
 </div>
 
