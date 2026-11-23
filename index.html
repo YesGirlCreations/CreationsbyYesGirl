@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <style>
-/* Home page logo section */
 .home-logo-row {
   display: flex;
   align-items: center;
@@ -25,301 +25,304 @@
   display: block;
 }
 
-/* Mobile phones */
 @media (max-width: 600px) {
-  .home-logo-row {
-    gap: 10px;
-  }
-
-  .home-logo {
-    width: 160px;
-  }
-
+  .home-logo-row { gap: 10px; }
+  .home-logo { width: 160px; }
   .home-side-picture {
     width: 75px;
     height: 75px;
   }
 }
 </style>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creations By Yes Girl</title>
-  <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
 
-    body {
-      margin: 0;
-      font-family: Georgia, 'Times New Roman', serif;
-      color: #32164f;
-      text-align: center;
-      background: linear-gradient(135deg, #fff3f8, #ead8ff, #fff7fb);
-      overflow-x: hidden;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Creations By Yes Girl — faith, encouragement, music, books, and creative resources by Amber Bostic. One YES at a time." />
+<link rel="canonical" href="https://creationsbyyesgirl.com/" />
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.8), transparent 18%),
-        radial-gradient(circle at 85% 15%, rgba(255,214,236,.65), transparent 20%),
-        radial-gradient(circle at 50% 85%, rgba(230,214,255,.65), transparent 24%);
-      z-index: -1;
-    }
+<title>Creations By Yes Girl</title>
 
-    header {
-      min-height: 100vh;
-      padding: 38px 20px 72px;
-      background:
-        radial-gradient(circle at top left, rgba(255,255,255,.95), transparent 34%),
-        radial-gradient(circle at top right, rgba(255,214,236,.9), transparent 33%),
-        linear-gradient(135deg, #fff7fb, #ffd6ec, #e6d6ff);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+<style>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
-    .hero {
-      width: min(1040px, 100%);
-      margin: auto;
-      background: rgba(255,255,255,.66);
-      border: 1px solid rgba(255,255,255,.9);
-      border-radius: 42px;
-      padding: 46px 26px;
-      box-shadow: 0 24px 70px rgba(74, 26, 110, .18);
-      backdrop-filter: blur(8px);
-      position: relative;
-      z-index: 2;
-    }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #32164f;
+  text-align: center;
+  background: linear-gradient(135deg, #fff3f8, #ead8ff, #fff7fb);
+  overflow-x: hidden;
+}
 
-    .logo {
-      max-width: 380px;
-      width: 86%;
-      height: auto;
-      margin: 0 auto 10px;
-      display: block;
-    }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.8), transparent 18%),
+    radial-gradient(circle at 85% 15%, rgba(255,214,236,.65), transparent 20%),
+    radial-gradient(circle at 50% 85%, rgba(230,214,255,.65), transparent 24%);
+  z-index: -1;
+}
 
-    .eyebrow {
-      display: inline-block;
-      margin: 10px auto 0;
-      padding: 8px 18px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.82);
-      color: #8b2f83;
-      font-weight: bold;
-      letter-spacing: .5px;
-      box-shadow: 0 0 18px rgba(214,156,255,.35);
-    }
+header {
+  min-height: 100vh;
+  padding: 38px 20px 72px;
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,.95), transparent 34%),
+    radial-gradient(circle at top right, rgba(255,214,236,.9), transparent 33%),
+    linear-gradient(135deg, #fff7fb, #ffd6ec, #e6d6ff);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    h1 {
-      font-size: clamp(42px, 7vw, 74px);
-      margin: 18px 0 8px;
-      color: #3b176b;
-      line-height: 1.04;
-    }
+.hero {
+  width: min(1040px, 100%);
+  margin: auto;
+  background: rgba(255,255,255,.66);
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 42px;
+  padding: 46px 26px;
+  box-shadow: 0 24px 70px rgba(74, 26, 110, .18);
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 2;
+}
 
-    h2 {
-      font-size: clamp(24px, 4vw, 36px);
-      color: #c04491;
-      font-style: italic;
-      margin: 10px 0 18px;
-    }
+.logo {
+  max-width: 380px;
+  width: 86%;
+  height: auto;
+  margin: 0 auto 10px;
+  display: block;
+}
 
-    h3 {
-      font-size: 27px;
-      color: #7b3fa1;
-      margin: 8px 0 10px;
-    }
+.eyebrow {
+  display: inline-block;
+  margin: 10px auto 0;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.82);
+  color: #8b2f83;
+  font-weight: bold;
+  letter-spacing: .5px;
+  box-shadow: 0 0 18px rgba(214,156,255,.35);
+}
 
-    p {
-      font-size: 20px;
-      max-width: 840px;
-      margin: 15px auto;
-      line-height: 1.68;
-    }
+h1 {
+  font-size: clamp(42px, 7vw, 74px);
+  margin: 18px 0 8px;
+  color: #3b176b;
+  line-height: 1.04;
+}
 
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-      margin-top: 28px;
-    }
+h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  color: #c04491;
+  font-style: italic;
+  margin: 10px 0 18px;
+}
 
-    .button {
-      display: inline-block;
-      padding: 17px 34px;
-      background: linear-gradient(135deg, #7b3fa1, #b65ad6);
-      color: white;
-      text-decoration: none;
-      border-radius: 999px;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 0 0 22px rgba(214, 156, 255, .85);
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
+h3 {
+  font-size: 27px;
+  color: #7b3fa1;
+  margin: 8px 0 10px;
+}
 
-    .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(123, 63, 161, .32);
-    }
+p {
+  font-size: 20px;
+  max-width: 840px;
+  margin: 15px auto;
+  line-height: 1.68;
+}
 
-    .button.light {
-      background: white;
-      color: #7b3fa1;
-      border: 2px solid #d69cff;
-    }
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
 
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255,255,255,.94);
-      backdrop-filter: blur(9px);
-      border-bottom: 1px solid rgba(123, 63, 161, .12);
-      padding: 12px;
-    }
+.button {
+  display: inline-block;
+  padding: 17px 34px;
+  background: linear-gradient(135deg, #7b3fa1, #b65ad6);
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 22px rgba(214, 156, 255, .85);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
 
-    nav a {
-      color: #6b2d91;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 8px 12px;
-      display: inline-block;
-    }
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(123, 63, 161, .32);
+}
 
-    nav a:hover { color: #c04491; }
+.button.light {
+  background: white;
+  color: #7b3fa1;
+  border: 2px solid #d69cff;
+}
 
-    section { padding: 78px 20px; }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(9px);
+  border-bottom: 1px solid rgba(123, 63, 161, .12);
+  padding: 12px;
+}
 
-    .card {
-      background: rgba(255, 255, 255, 0.88);
-      max-width: 1050px;
-      margin: 0 auto 28px;
-      padding: 44px 28px;
-      border-radius: 30px;
-      box-shadow: 0 0 30px rgba(100, 50, 130, 0.14);
-      border: 1px solid rgba(255,255,255,.92);
-    }
+nav a {
+  color: #6b2d91;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 8px 12px;
+  display: inline-block;
+}
 
-    .soft-card {
-      background: #fff7fb;
-      border: 1px solid rgba(214,156,255,.26);
-      border-radius: 24px;
-      padding: 26px 20px;
-      box-shadow: 0 0 17px rgba(100, 50, 130, 0.1);
-      min-height: 220px;
-    }
+nav a:hover { color: #c04491; }
 
-    a.soft-card {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
+section { padding: 78px 20px; }
 
-    a.soft-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 26px rgba(123, 63, 161, .18);
-    }
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  max-width: 1050px;
+  margin: 0 auto 28px;
+  padding: 44px 28px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(100, 50, 130, 0.14);
+  border: 1px solid rgba(255,255,255,.92);
+}
 
-    .card-link-note {
-      display: inline-block;
-      margin-top: 8px;
-      color: #c04491;
-      font-weight: bold;
-      font-size: 15px;
-    }
+.soft-card {
+  background: #fff7fb;
+  border: 1px solid rgba(214,156,255,.26);
+  border-radius: 24px;
+  padding: 26px 20px;
+  box-shadow: 0 0 17px rgba(100, 50, 130, 0.1);
+  min-height: 220px;
+}
 
-    .icons, .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 22px;
-      margin-top: 32px;
-    }
+a.soft-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
 
-    .icons {
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 990px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+a.soft-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(123, 63, 161, .18);
+}
 
-    .icon { font-size: 44px; margin-bottom: 8px; }
-    .soft-card p { font-size: 17px; }
+.card-link-note {
+  display: inline-block;
+  margin-top: 8px;
+  color: #c04491;
+  font-weight: bold;
+  font-size: 15px;
+}
 
-    .scripture {
-      font-size: 23px;
-      font-style: italic;
-      color: #6b2d91;
-      background: #fff7fb;
-      padding: 26px;
-      border-radius: 24px;
-      border-left: 7px solid #c04491;
-    }
+.icons, .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
 
-    .two-column {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 22px;
-      align-items: stretch;
-      margin-top: 28px;
-    }
+.icons {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .highlight {
-      color: #c04491;
-      font-weight: bold;
-    }
+.icon { font-size: 44px; margin-bottom: 8px; }
+.soft-card p { font-size: 17px; }
 
-    .butterfly {
-      position: absolute;
-      font-size: 42px;
-      animation: flutter 8s infinite ease-in-out;
-      opacity: 0.8;
-      z-index: 1;
-    }
+.scripture {
+  font-size: 23px;
+  font-style: italic;
+  color: #6b2d91;
+  background: #fff7fb;
+  padding: 26px;
+  border-radius: 24px;
+  border-left: 7px solid #c04491;
+}
 
-    .b1 { top: 12%; left: 7%; }
-    .b2 { top: 17%; right: 9%; animation-delay: 1s; }
-    .b3 { bottom: 18%; left: 10%; animation-delay: 2s; }
-    .b4 { bottom: 14%; right: 13%; animation-delay: 3s; }
-    .b5 { top: 36%; left: 22%; font-size: 30px; animation-delay: 4s; }
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 22px;
+  align-items: stretch;
+  margin-top: 28px;
+}
 
-    @keyframes flutter {
-      0% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-25px) rotate(10deg); }
-      100% { transform: translateY(0) rotate(0deg); }
-    }
+.highlight {
+  color: #c04491;
+  font-weight: bold;
+}
 
-    footer {
-      padding: 38px 20px;
-      background: #3b244d;
-      color: white;
-    }
+.butterfly {
+  position: absolute;
+  font-size: 42px;
+  animation: flutter 8s infinite ease-in-out;
+  opacity: 0.8;
+  z-index: 1;
+}
 
-    footer p { font-size: 17px; }
+.b1 { top: 12%; left: 7%; }
+.b2 { top: 17%; right: 9%; animation-delay: 1s; }
+.b3 { bottom: 18%; left: 10%; animation-delay: 2s; }
+.b4 { bottom: 14%; right: 13%; animation-delay: 3s; }
+.b5 { top: 36%; left: 22%; font-size: 30px; animation-delay: 4s; }
 
-    @media (max-width: 900px) {
-      .icons { grid-template-columns: repeat(2, 1fr); }
-    }
+@keyframes flutter {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
 
-    @media (max-width: 650px) {
-      header { padding-top: 28px; }
-      .hero { padding: 30px 16px; border-radius: 28px; }
-      .button { width: 100%; max-width: 340px; font-size: 18px; padding: 15px 22px; }
-      p { font-size: 18px; }
-      .butterfly { opacity: .35; }
-      nav a { margin: 6px 7px; font-size: 15px; }
-      section { padding: 58px 16px; }
-      .card { padding: 32px 18px; }
-      .icons { grid-template-columns: 1fr; }
-      .soft-card { min-height: auto; }
-    }
-  </style>
+footer {
+  padding: 38px 20px;
+  background: #3b244d;
+  color: white;
+}
+
+footer p { font-size: 17px; }
+
+@media (max-width: 900px) {
+  .icons { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+  header { padding-top: 28px; }
+  .hero { padding: 30px 16px; border-radius: 28px; }
+  .button {
+    width: 100%;
+    max-width: 340px;
+    font-size: 18px;
+    padding: 15px 22px;
+  }
+  p { font-size: 18px; }
+  .butterfly { opacity: .35; }
+  nav a { margin: 6px 7px; font-size: 15px; }
+  section { padding: 58px 16px; }
+  .card { padding: 32px 18px; }
+  .icons { grid-template-columns: 1fr; }
+  .soft-card { min-height: auto; }
+}
+</style>
 </head>
 
 <body>
@@ -332,17 +335,14 @@
   <div class="butterfly b5">🦋</div>
 
   <div class="hero">
-<div class="home-logo-row">
+    <div class="home-logo-row">
+      <img class="home-side-picture" src="fractured-cover.PNG" alt="Fractured">
+      <img class="home-logo" src="CreationsbyYesGirl-logo.png" alt="Creations By Yes Girl logo">
+      <img class="home-side-picture" src="Iamloved.png" alt="I am Loved">
+    </div>
 
-  <img class="home-side-picture" src="fractured-cover.PNG" alt="Fractured">
+    <div class="eyebrow">You are loved. 💜 You are chosen. 🦋 You are worthy.🤍 You are never alone.</div>
 
-  <img class="home-logo" src="CreationsbyYesGirl-logo.png" alt="Creations By Yes Girl logo">
-
-  <img class="home-side-picture" src="Iamloved.png" alt="I am Loved">
-
-</div>
-
-   <div class="eyebrow">You are loved. 💜 You are chosen. 🦋 You are worthy.🤍 You are never alone.</div>
     <h1>I am God's Yes Girl!</h1>
     <h2>And you know what? You can be too!</h2>
 
@@ -362,13 +362,13 @@
 </header>
 
 <nav>
-  <a href="/CreationsbyYesGirl/index.html#welcome">Home</a>
-  <a href="/CreationsbyYesGirl/mystory.html">My Story</a>
-  <a href="/CreationsbyYesGirl/psalmswithmyfather.html">Psalms</a>
-  <a href="/CreationsbyYesGirl/index.html#music">Music</a>
-  <a href="/CreationsbyYesGirl/shop.html">Shop</a>
-  <a href="/CreationsbyYesGirl/encouragement.html">Journal</a>
-  <a href="/CreationsbyYesGirl/index.html#prayer">Prayer</a>
+  <a href="/#welcome">Home</a>
+  <a href="/mystory.html">My Story</a>
+  <a href="/psalmswithmyfather.html">Psalms</a>
+  <a href="/#music">Music</a>
+  <a href="/shop.html">Shop</a>
+  <a href="/encouragement.html">Journal</a>
+  <a href="/#prayer">Prayer</a>
 </nav>
 
 <section id="welcome">
@@ -381,42 +381,42 @@
     <p><strong>One <span class="highlight">YES</span> at a time. 💗</strong></p>
 
     <div class="icons">
-      <a class="soft-card" href="/CreationsbyYesGirl/mystory.html">
+      <a class="soft-card" href="/mystory.html">
         <div class="icon">✝️</div>
         <h3>Faith</h3>
         <p>Growing closer to Jesus every day.</p>
         <span class="card-link-note">Read My Story →</span>
       </a>
 
-      <a class="soft-card" href="/CreationsbyYesGirl/encouragement.html">
+      <a class="soft-card" href="/encouragement.html">
         <div class="icon">🦋</div>
         <h3>Encouragement</h3>
         <p>Uplifting hearts with His Truth.</p>
         <span class="card-link-note">Visit the Journal →</span>
       </a>
 
-      <a class="soft-card" href="/CreationsbyYesGirl/shop.html">
+      <a class="soft-card" href="/shop.html">
         <div class="icon">💗</div>
         <h3>Creativity</h3>
         <p>Created to create for His glory.</p>
         <span class="card-link-note">Support the Ministry →</span>
       </a>
 
-      <a class="soft-card" href="https://www.youtube.com/channel/UCfivl9YNK-MATCPWmph_mZQ" target="_blank">
+      <a class="soft-card" href="https://www.youtube.com/channel/UCfivl9YNK-MATCPWmph_mZQ" target="_blank" rel="noopener noreferrer">
         <div class="icon">🎵</div>
         <h3>Music</h3>
         <p>Worshiping through songs from the heart.</p>
         <span class="card-link-note">Listen to Music →</span>
       </a>
 
-      <a class="soft-card" href="/CreationsbyYesGirl/shop.html">
+      <a class="soft-card" href="/shop.html">
         <div class="icon">📚</div>
         <h3>Books</h3>
         <p>Children's books, devotionals, poetry, journals, and faith-filled resources written to encourage hearts of all ages.</p>
         <span class="card-link-note">Browse Books →</span>
       </a>
 
-      <a class="soft-card" href="/CreationsbyYesGirl/psalmswithmyfather.html">
+      <a class="soft-card" href="/psalmswithmyfather.html">
         <div class="icon">🖋️</div>
         <h3>Psalms with My Father</h3>
         <p>Poems written through prayer, worship, healing, and conversations with my Heavenly Father.</p>
@@ -444,28 +444,26 @@
     </p>
     <p><strong>If He could change my life, He can meet you where you are too. 💜</strong></p>
     <div class="button-row">
-      <a class="button" href="/CreationsbyYesGirl/mystory.html">Read My Story →</a>
+      <a class="button" href="/mystory.html">Read My Story →</a>
     </div>
   </div>
 </section>
 
 <section id="youtube">
   <div class="card">
-    <h1>Watch & Be Encouraged</h1>
+    <h1>Watch &amp; Be Encouraged</h1>
     <p>
       Follow along on YouTube for faith-filled encouragement, creativity, worship, and reminders that God is still working...
       <br><strong>One <span class="highlight">YES</span> at a time. 💗</strong>
     </p>
-    <a class="button" href="https://www.youtube.com/@yesgirl-316" target="_blank">▶ Go to YouTube</a>
+    <a class="button" href="https://www.youtube.com/@yesgirl-316" target="_blank" rel="noopener noreferrer">▶ Go to YouTube</a>
   </div>
 </section>
 
 <section id="music">
   <div class="card">
     <h1>🎵 Worship With Me</h1>
-    <p>
-      Worship has become one of the ways I thank God for rescuing me.
-    </p>
+    <p>Worship has become one of the ways I thank God for rescuing me.</p>
     <p>
       Every song on my channel was written from a real season of my life. Some were born from tears, some from healing, and others from overwhelming gratitude for God's faithfulness.
     </p>
@@ -475,8 +473,8 @@
     </p>
     <p><strong>One <span class="highlight">YES</span> at a time. 💜</strong></p>
     <div class="button-row">
-      <a class="button" href="https://www.youtube.com/channel/UCfivl9YNK-MATCPWmph_mZQ" target="_blank">🎵 Listen on YouTube</a>
-      <a class="button light" href="/CreationsbyYesGirl/index.html#welcome">Back to Home ↑</a>
+      <a class="button" href="https://www.youtube.com/channel/UCfivl9YNK-MATCPWmph_mZQ" target="_blank" rel="noopener noreferrer">🎵 Listen on YouTube</a>
+      <a class="button light" href="/#welcome">Back to Home ↑</a>
     </div>
   </div>
 </section>
@@ -488,34 +486,36 @@
       Every purchase helps support the ministry of Creations By Yes Girl and allows me to continue creating faith-filled encouragement that points people to the love and hope found in Jesus Christ.
     </p>
     <p><strong>Thank you for helping me share His love with the world. 💜</strong></p>
-<h2>My New Book</h2>
 
-  <img src="fractured-cover .PNG"
-       alt="Fractured by Amber Bostic"
-       width="300">
+    <h2>My New Book</h2>
 
-  <h3>You are not broken. You are fractured.</h3>
+    <img src="fractured-cover.PNG"
+         alt="Fractured by Amber Bostic"
+         width="300">
 
-  <p>
-    Life can leave us wounded, hurting, and feeling like pieces of
-    who we once were. But our fractures do not have to define us.
-  </p>
+    <h3>You are not broken. You are fractured.</h3>
 
-  <p>
-    <strong>Fractured</strong> is a journey of healing, restoration,
-    and discovering what happens when we allow Jesus to shine His
-    light through the places that hurt the most.
-  </p>
+    <p>
+      Life can leave us wounded, hurting, and feeling like pieces of
+      who we once were. But our fractures do not have to define us.
+    </p>
 
-  <p><em>“Jesus heals and restores.”</em></p>
+    <p>
+      <strong>Fractured</strong> is a journey of healing, restoration,
+      and discovering what happens when we allow Jesus to shine His
+      light through the places that hurt the most.
+    </p>
 
-  <a href="https://www.amazon.com/FRACTURED-Amber-Bostic/dp/B0HBNSZ3N8"
-     target="_blank"
-     rel="noopener noreferrer">
-    📖 Get Your Copy of Fractured
-  </a>
+    <p><em>“Jesus heals and restores.”</em></p>
+
+    <a href="https://www.amazon.com/FRACTURED-Amber-Bostic/dp/B0HBNSZ3N8"
+       target="_blank"
+       rel="noopener noreferrer">
+      📖 Get Your Copy of Fractured
+    </a>
+
     <div class="grid">
-      <a class="soft-card" href="/CreationsbyYesGirl/shop.html">
+      <a class="soft-card" href="/shop.html">
         <div class="icon">🦋</div>
         <h3>Digital Prayer Cards</h3>
         <p>Printable watercolor prayer cards filled with Scripture, hope, and encouragement.</p>
@@ -531,7 +531,7 @@
     </div>
 
     <div class="button-row">
-      <a class="button" href="/CreationsbyYesGirl/shop.html">🦋 Shop Digital Prayer Cards</a>
+      <a class="button" href="/shop.html">🦋 Shop Digital Prayer Cards</a>
       <a class="button light" href="https://creations-by-yes-girl-316.printify.me" target="_blank" rel="noopener noreferrer">💜 Shop Apparel &amp; Gifts</a>
     </div>
 
@@ -552,7 +552,7 @@
         <h3>Weekly Encouragement</h3>
         <p>God is faithful through every season of life.</p>
         <p>Read this week's encouragement and browse every past encouragement in one place.</p>
-        <a class="button light" href="/CreationsbyYesGirl/encouragement.html">📖 Read This Week's Encouragement →</a>
+        <a class="button light" href="/encouragement.html">📖 Read This Week's Encouragement →</a>
       </div>
     </div>
   </div>
@@ -567,15 +567,9 @@
     <h1>Prayer Requests</h1>
     <h2>You do not have to walk through this alone.</h2>
 
-    <p>
-      No matter what you're carrying today, Jesus sees you.
-    </p>
-    <p>
-      I would be honored to pray with you and for you.
-    </p>
-    <p>
-      If there's something on your heart, click the button below and send me an email.
-    </p>
+    <p>No matter what you're carrying today, Jesus sees you.</p>
+    <p>I would be honored to pray with you and for you.</p>
+    <p>If there's something on your heart, click the button below and send me an email.</p>
 
     <p><strong>Jesus loves you. And so do I. 💜</strong></p>
 
@@ -585,7 +579,7 @@
 
     <div class="button-row">
       <a class="button" href="mailto:Amberbostic@hotmail.com?subject=Prayer%20Request">Send Me Your Prayer Request 💜</a>
-      <a class="button light" href="/CreationsbyYesGirl/index.html#home">Back to Top ↑</a>
+      <a class="button light" href="/#home">Back to Top ↑</a>
     </div>
   </div>
 </section>
